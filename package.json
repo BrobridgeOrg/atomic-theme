@@ -1,0 +1,20 @@
+{
+  "name": "atomic",
+  "version": "0.0.1",
+  "description": "Atomic theme for Node-RED",
+  "main": "atomic.js",
+  "keywords": [
+    "node-red",
+    "nodered",
+    "plugin",
+    "atomic",
+    "theme"
+  ],
+  "author": "Jose Wang <jose@brobridge.com>",
+  "license": "Apache-2.0",
+  "node-red": {
+    "plugins": {
+      "atomic": "atomic.js"
+    }
+  }
+}
