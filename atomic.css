@@ -11,10 +11,8 @@
         border-left: none;
         border-right: none;
         border-radius: 8px;
-        margin: 5px;
         line-height: 30px;
         font-size: 14px;
-        margin: 5px;
 
         &:hover {
             background: var(--red-ui-secondary-background-hover);
