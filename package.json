@@ -1,5 +1,5 @@
 {
-  "name": "atomic-theme",
+  "name": "@brobridge/atomic-theme",
   "version": "0.0.1",
   "description": "Atomic theme for Node-RED",
   "main": "atomic.js",
