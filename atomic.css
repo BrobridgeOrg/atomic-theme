@@ -346,3 +346,9 @@ button.red-ui-button:last-child {
     box-shadow: 0 3px 7px 0 var(--red-ui-shadow);
     border-radius: 10px;
 }
+
+.red-ui-editor,.red-ui-editor-dialog {
+    .form-tips {
+        border-radius: 10px;
+    }
+}
