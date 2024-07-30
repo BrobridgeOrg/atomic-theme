@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Atomic theme for Node-RED",
   "main": "atomic.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrobridgeOrg/atomic-theme"
+  },
   "keywords": [
     "node-red",
     "nodered",
@@ -12,9 +16,14 @@
   ],
   "author": "Jose Wang <jose@brobridge.com>",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/BrobridgeOrg/atomic-theme/issues"
+  },
+  "homepage": "https://github.com/BrobridgeOrg/atomic-theme#readme",
   "node-red": {
     "plugins": {
       "atomic": "atomic.js"
     }
   }
 }
+
