@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Atomic theme for Node-RED",
   "main": "atomic.js",
+  "scripts": {
+    "build": "grunt build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BrobridgeOrg/atomic-theme"
@@ -14,6 +17,12 @@
     "atomic",
     "theme"
   ],
+  "devDependencies": {
+    "grunt": "1.6.1",
+    "grunt-contrib-cssmin": "5.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-uglify": "5.2.2"
+  },
   "author": "Jose Wang <jose@brobridge.com>",
   "license": "Apache-2.0",
   "bugs": {
@@ -26,4 +35,3 @@
     }
   }
 }
-

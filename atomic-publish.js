@@ -68,7 +68,7 @@
         }
     }
 
-    window.addEventListener("load", (event) => {
+    window.addEventListener("load", function(event) {
         init();
     });      
 })();

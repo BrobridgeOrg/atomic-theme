@@ -5,11 +5,11 @@ module.exports = function(RED) {
         type: "node-red-theme",
         css: [
             "atomic-theme.min.css",
-            "atomic.css"
+            "atomic.min.css"
         ],
         // List the script files the theme provides.
         // If the theme doesn't include any, this can be left out
-        scripts: "atomic-publish.js",
+        scripts: "atomic-publish.min.js",
         monacoOptions: {
             theme: "tomorrow-night"
         }        

@@ -11,7 +11,7 @@ Brobridge Atomic theme for Node-RED.
 Run the following command from within the Node-RED user data directory (by default, `$HOME/.node-red`).
 
 ```shell
-npm install atomic-theme
+npm install @brobridge/atomic-theme
 ```
 
 ### Install from GitHub
