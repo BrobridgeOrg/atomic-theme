@@ -3,8 +3,8 @@
     function init(options) {
         options = options || {};
 
-		$('<li><span class="button red-ui-publish-button" id="red-ui-header-button-publish"><i class="icon"></i><span class="label">Publish</span></span></li>')
-			.appendTo(".red-ui-header-toolbar");
+        $('<li><span class="button red-ui-publish-button" id="red-ui-header-button-publish"><i class="icon"></i><span class="label">Publish</span></span></li>')
+            .appendTo(".red-ui-header-toolbar");
 
         $('#red-ui-header-button-publish').on("click", function(event) {
             event.preventDefault();
@@ -21,10 +21,10 @@
                 return;
             }
 
-			$("#red-ui-header-button-publish").addClass('disabled');
+            $("#red-ui-header-button-publish").addClass('disabled');
 
-			RED.nodes.dirty(false);
-			RED.notify('<p>Publishing...</p>', 'info');
+            RED.nodes.dirty(false);
+            RED.notify('<p>Publishing...</p>', 'info');
 
             $.ajax({
                 url: "publish",
@@ -34,7 +34,7 @@
             }).done(function(data, textStatus, xhr) {
 
                 RED.nodes.dirty(false);
-				RED.notify('<p>Publish Successfully</p>', 'success');
+                RED.notify('<p>Publish Successfully</p>', 'success');
                 $("#red-ui-header-button-publish").removeClass("disabled");
 
             }).fail(function(xhr,textStatus,err) {
@@ -52,7 +52,7 @@
                 }
 
             }).always(function() {
-				/*
+                /*
                 deployInflight = false;
                 var delta = Math.max(0,300-(Date.now()-startTime));
                 setTimeout(function() {
@@ -63,12 +63,12 @@
                     $("#red-ui-palette-shade").hide();
                     $("#red-ui-sidebar-shade").hide();
                 },delta);
-				*/
+                */
             });
         }
     }
 
-    window.addEventListener("load", function(event) {
+    $(document).ready(function() {
         init();
-    });      
+    });  
 })();
